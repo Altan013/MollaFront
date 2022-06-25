@@ -1,0 +1,104 @@
+.about-images {
+    .about-img-front {
+        position: relative;
+        z-index: 5;
+        left: 125px;
+        top: 60px;
+
+    }
+    .about-img-back {
+        position: absolute;
+    }
+}
+.brands-display {
+    img {
+        width: 100%;
+    }
+}
+.member {
+    margin-bottom: 2rem;
+    max-width: 376px;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        .member-content {
+            transform: translate(0px,-100px);
+            z-index: -1;
+            opacity: 0;
+            transition: all 0.3s;
+        }
+    }
+    .member-content {
+        position: relative;
+        margin: 0;
+        padding-top: 2.4rem;
+        padding-bottom: 2.4rem;
+        overflow: hidden;
+    }
+    .member-media {
+        position: relative;
+        margin: 0;
+        &:hover {
+            .member-overlay {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        .member-content {
+            opacity: 1;
+            z-index: 1;
+        }
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        .member-overlay {
+            transition: all 0.45s ease;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(102, 102, 102, 0.7);
+            color: #fff;
+            opacity: 0;
+            visibility: hidden;
+
+            .social-icons {
+                margin-top: 2.7rem;
+            }
+            .member-title {
+                color: inherit;
+                margin-bottom: 1.5rem;
+                font-weight: 400;
+                font-size: 1.6rem;
+                letter-spacing: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+    .text-center {
+        .social-icons {
+            justify-content: center;
+            p {
+                max-width: 240px;
+                color: #999;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        }
+
+    }
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+    z-index: 1;
+}

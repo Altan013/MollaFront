@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Molla-Shop</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+            rel="stylesheet"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+            integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link rel="stylesheet" href="asset/css/bootstrap.css">
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+    <body style="overflow-x: hidden;">
+        <section id="header">
+            <div class="container">
+                <div class="row top-header">
+                    <ul>
+                        <li>
+                            <a style="color: #c96;" href="">
+                                <i class="fa-solid fa-phone"></i>Call: +51 636 16 44</a>
+                        </li>
+                        <li>
+                            <a style="color: #c96;" href="">
+                                <i class="fa-solid fa-heart"></i>Wishlist
+                                <span class="w-count">( 0 )</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="color: #c96;" href="">Altan</a>
+                        </li>
+                        <li>
+                            <a style="color: #c96;" href="">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row main-header">
+                    <div class="left-m-header col-lg-1">
+                        <img src="../00/asset/images/logo-gold-white.png" alt="">
+                    </div>
+                    <div class="center-m-header col-lg-7">
+                        <ul>
+                            <li>
+                                <a style="color: #c96;" href="">Home</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Man</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Woman</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Blog</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-m-header col-lg-4">
+                        <ul>
+                            <li>
+                                <a style="color: #c96;" href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cart-count">0</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div
+            class="page-header text-center"
+            style="background-image: url('/00/asset/images/page-header-bg.jpg')">
+            <div class="container">
+                <h1 class="page-title">Shop<span>
+                        Man</span></h1>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" class="breadcrumb-nav breadcrumb-with-filter">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a style="color: #c96;" href="/">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a style="color: #c96;" href="/man">Man</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="product-details-top">
+                <input hidden="" class="firstLoadId" value="1155">
+                <div class="row forheight">
+                    <div class="col-md-7">
+                        <div class="product-gallery product-gallery-vertical">
+                            <div
+                                class="row formodal"
+                                style="display: flex;justify-content:center;align-items: center;">
+
+                                <div
+                                    id="product-zoom-gallery col-lg-3 row"
+                                    style="padding: 0;width: 25%;overflow: hidden;display: flex; flex-direction: column;"
+                                    class="product-image-gallery">
+                                    <a
+                                        style="width:105px;height:106px!important;overflow:hidden !important"
+                                        class="product-gallery-item active changeable"
+                                        href="#"
+                                        data-image="/00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg"
+                                        data-zoom-image="/00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg">
+                                        <img
+                                            style="width:100%;height:106px!important;object-fit:cover"
+                                            src="/00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg"
+                                            alt="product side">
+                                    </a>
+
+                                    <a
+                                        style="width:106px;height:106px!important;overflow:hidden !important"
+                                        class="product-gallery-item changeable"
+                                        href="#"
+                                        data-image="~/assets/images/products/b8a80110-2e03-4428-bb46-2da459217444for2.jpg"
+                                        data-zoom-image="~/assets/images/products/b8a80110-2e03-4428-bb46-2da459217444for2.jpg">
+                                        <img
+                                            style="width:106px;height:106px!important;object-fit:cover"
+                                            src="/00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg "
+                                            alt="product back">
+                                    </a>
+                                    <a
+                                        style="width:106px;height:106px!important;overflow:hidden !important"
+                                        class="product-gallery-item changeable"
+                                        href="#"
+                                        data-image="/00/assets/images/products/b8a80110-2e03-4428-bb46-2da459217444for2.jpg"
+                                        data-zoom-image="/00/assets/images/products/b8a80110-2e03-4428-bb46-2da459217444for2.jpg">
+                                        <img
+                                            style="width:106px;height:106px!important;object-fit:cover"
+                                            src="/00/asset/images/products/2e5e72f2-04c1-492c-9562-6f3354036041for3.jpg"
+                                            alt="product back">
+                                    </a>
+                                    <a
+                                        style="width:106px;height:106px!important;overflow:hidden !important"
+                                        class="product-gallery-item changeable"
+                                        href="#"
+                                        data-image="/00/asset/images/products/2e5e72f2-04c1-492c-9562-6f3354036041for3.jpg"
+                                        data-zoom-image="/00/asset/images/products/2e5e72f2-04c1-492c-9562-6f3354036041for3.jpg1">
+                                        <img
+                                            style="width:106px;height:106px!important;object-fit:cover"
+                                            src="/00/asset/images/products/8c864a48-4a30-47f5-9d9f-ecd6d6e1b27cfor4.jpg"
+                                            alt="product back">
+                                    </a>
+                                </div>
+                                <figure
+                                    class="product-main-image col-lg-7 my-gallery image-container"
+                                    style="padding: 0;overflow: hidden;width: 75%;
+                                    /* background-image: url(../00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg) */
+                                    ;">
+                                    <img 
+                                    id="imageZoom"
+                                        style="height: 457px !important; object-fit: cover; width: 100%;"
+                                        class="product-zoom"
+                                        src="/00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg"
+                                        alt="product image">
+                                    <a
+                                        data-toggle="modal"
+                                        data-target="#exampleModalCenter"
+                                        style="cursor:pointer"
+                                        id="btn-product-gallery"
+                                        class="btn-product-gallery">
+                                        <i class="icon-arrows"></i>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="product-details">
+                            <h1 style="font-size: 24px; color:#333333;" class="product-title">RIBBED SHORT SLEEVE T-SHIRT</h1>
+                            <div class="product-price">
+                                <span style="font-size: 18px; color:#c96;" color:="color:" #c96"="#c96"">19 $</span>
+                            </div>
+                            <div class="product-content">
+                                <p style="font-size: 14px; color:#777777;">Cropped basic short sleeve T-shirt with round neck in ribbed fabric.</p>
+                            </div>
+
+                            <div class="details-filter-row details-row-size">
+                                <label style="font-size: 14px; color:#777777;">Color:</label>
+
+                                <div class="product-nav product-nav-thumbs">
+                                    <a style="height:52px;width:40px" class="active">
+                                        <img
+                                            style="height:52px;width:40px;object-fit:cover"
+                                            src="/00/asset/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg"
+                                            alt="product desc">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="details-filter-row details-row-size">
+                                <label style="font-size: 14px; color:#777777;" for="size">Size:</label>
+                                <div class="select-custom">
+                                    <select name="size" id="size" class="form-control">
+                                        <option value="0">Select size</option>
+                                        <option style="color:black" value="3">M</option>
+                                    </select>
+                                </div>
+                                <a href="#" class="size-guide" data-toggle="modal" data-target="#modalSize">
+                                    <i class="icon-th-list"></i>size guide</a>
+                            </div>
+
+                            <div class="details-filter-row details-row-size">
+                                <label style="font-size: 14px; color:#777777;" for="qty">Qty:</label>
+                                <div class="product-details-quantity">
+                                    <span id="decrease">-</span>
+                                    <span id="count">1</span>
+                                    <span id="increase">+</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-details-action">
+                            <a class="btn-product btn-cart add-to-cart" href="/Woman/setbasket">
+                                <span style="font-size: 14px; color:rgb(196, 182, 168);">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    add to cart</span></a>
+                            <input class="forSizeId" hidden="">
+                            <input hidden="" class="forProductId" value="1089">
+                            <input hidden="" class="forCount">
+                            <input class="forColorId" hidden="" value="10">
+                        </div>
+                        <div class="product-details-footer">
+                            <div class="product-cat">
+                                <span style="font-size: 14px; color:#777777;">Category:</span>
+                                <a style="font-size: 14px; color:#777777;" href="/Woman/shop/16">Tshirts
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="modal fade"
+                id="exampleModalCenter"
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalCenterTitle"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <img
+                        id="changeForModal"
+                        style="object-fit:cover;width:575px;height:575px"
+                        src="/assets/images/products/4afb2d4c-0daa-46ed-99de-7249f378da42for1.jpg"
+                        alt="product side">
+                </div>
+            </div>
+        </div>
+        <div class="product-details-tab">
+            <ul class="nav nav-pills justify-content-center" role="tablist">
+                <li class="nav-item">
+                    <a
+                        style="font-size: 18px; color:#333333;"
+                        class="nav-link"
+                        id="product-desc-link"
+                        data-toggle="tab"
+                        href="#product-desc-tab"
+                        role="tab"
+                        aria-controls="product-desc-tab"
+                        aria-selected="false">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        style="font-size: 18px; color:#333333;"
+                        class="nav-link"
+                        id="product-shipping-link"
+                        data-toggle="tab"
+                        href="#product-shipping-tab"
+                        role="tab"
+                        aria-controls="product-shipping-tab"
+                        aria-selected="false">Shipping &amp; Returns</a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        style="font-size: 18px; color:#333333;"
+                        class="nav-link"
+                        id="product-review-link"
+                        data-toggle="tab"
+                        href="#product-review-tab"
+                        role="tab"
+                        aria-controls="product-review-tab"
+                        aria-selected="false">
+                        Reviews(0)
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div
+                    class="tab-pane fade show active"
+                    id="product-desc-tab"
+                    role="tabpanel"
+                    aria-labelledby="product-desc-link">
+                    <div style="font-size: 18px; color:#333333;" class="product-desc-content">
+                        We work with monitoring programmes to ensure compliance with safety, health and
+                        quality standards for our products. The Green to Wear 2.0 standard aims to min
+                    </div>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="product-shipping-tab"
+                    role="tabpanel"
+                    aria-labelledby="product-shipping-link">
+                    <div class="product-desc-content">
+                        <h3>Delivery &amp; returns</h3>
+                        <p style="font-size: 18px; color:#333333;">
+                            We deliver to over 100 countries around the world. For full details of the
+                            delivery options we offer, please view our
+                            <a href="#">Delivery information</a><br>
+                            We hope you’ll love every purchase, but if you ever need to return an item you
+                            can do so within a month of receipt. For full details of how to make a return,
+                            please view our
+                            <a href="#">Returns information</a>
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane fade"
+                    id="product-review-tab"
+                    role="tabpanel"
+                    aria-labelledby="product-review-link">
+                    <div class="reviews">
+                        <div class="col-md-12" style="margin-bottom:30px">
+                            <div id="review-form"></div>
+                        </div>
+                        <div class="review-place"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2
+            style="margin-bottom: 4rem; font-size: 24px; color:#333333;"
+            class="title text-center mb-4">You May Also Like</h2>
+        <section style=" background-color: #eee;">
+            <div class="text-center container py-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="card">
+                            <div
+                                class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                data-mdb-ripple-color="light">
+                                <img src="/00/asset/images/prod/men/16986060_33828007_1000.jpg" class="w-100"/>
+                                <a href="#!">
+                                    <div class="mask">
+                                        <div class="d-flex justify-content-start align-items-end h-100">
+                                            <h5>
+                                                <span class="badge bg-primary ms-2">New</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="hover-overlay">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <a href="" class="text-reset">
+                                    <h5 style="font-size: 18px; color:#333333;" class="card-title mb-3">Product name</h5>
+                                </a>
+                                <a href="" class="text-reset">
+                                    <p>Category</p>
+                                </a>
+                                <h6 style="font-size: 18px; color:#c96;" class="mb-3">$61.99</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div
+                                class="bg-image hover-zoom ripple ripple-surface ripple-surface-light"
+                                data-mdb-ripple-color="light">
+                                <img src="/00/asset/images/prod/men/16986060_33828007_1000.jpg" class="w-100"/>
+                                <a href="#!">
+                                    <div class="mask">
+                                        <div class="d-flex justify-content-start align-items-end h-100">
+                                            <h5>
+                                                <span class="badge bg-success ms-2">Eco</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="hover-overlay">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <a href="" class="text-reset">
+                                    <h5 style="font-size: 18px; color:#333333;" class="card-title mb-3">Product name</h5>
+                                </a>
+                                <a href="" class="text-reset">
+                                    <p>Category</p>
+                                </a>
+                                <h6 style="font-size: 18px; color:#c96;" class="mb-3">$61.99</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <div class="bg-image hover-zoom ripple" data-mdb-ripple-color="light">
+                                <img src="/00/asset/images/prod/men/16986060_33828007_1000.jpg" class="w-100"/>
+                                <a href="#!">
+                                    <div class="mask">
+                                        <div class="d-flex justify-content-start align-items-end h-100">
+                                            <h5>
+                                                <span class="badge bg-danger ms-2">-10%</span></h5>
+                                        </div>
+                                    </div>
+                                    <div class="hover-overlay">
+                                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <a href="" class="text-reset">
+                                    <h5 style="font-size: 18px; color:#333333;" class="card-title mb-3">Product name</h5>
+                                </a>
+                                <a href="" class="text-reset">
+                                    <p>Category</p>
+                                </a>
+                                <h6 class="mb-3">
+                                    <s style="font-size: 18px; color:#c96;">$61.99</s>
+                                    <strong class="ms-2 text-danger">$50.99</strong>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-middle">
+            <div class="container">
+                <div class="row">
+                    <div class="about">
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget widget-about">
+                                <h4 class="widget-title">about molla</h4>
+                                <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu
+                                    vulputate magna eros eu erat.
+                                </p>
+
+                                <div class="social-icons">
+                                    <a href="#" class="social-icon" title="Facebook" target="_blank">
+                                        <i class="icon-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social-icon" title="Twitter" target="_blank">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-icon" title="Instagram" target="_blank">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social-icon" title="Youtube" target="_blank">
+                                        <i class="icon-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Useful Links</h4>
+                                <ul class="widget-list">
+                                    <li>
+                                        <a href="about.html">About Molla</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">How to shop on Molla</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="login.html">Log in</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">Customer Service</h4>
+                                <ul class="widget-list">
+                                    <li>
+                                        <a href="#">Payment Methods</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Money-back guarantee!</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Returns</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Shipping</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Terms and conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="widget">
+                                <h4 class="widget-title">My Account</h4>
+
+                                <ul class="widget-list">
+                                    <li>
+                                        <a href="#">Sign In</a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html">View Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">My Wishlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Track My Order</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Help</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <figure class="footer-payments">
+                    <img
+                        src="/00/asset/images/payments.png"
+                        alt="Payment methods"
+                        width="272"
+                        height="20">
+                </figure>
+                <img
+                    src="/00/asset/images/logo-gold-white.png"
+                    alt="Molla Logo"
+                    width="82"
+                    height="25">
+                <p style="color: #c96;" class="footer-copyright">Copyright © 2022 Molla Store. All Rights Reserved, Developed Altan Ibrahimli.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+<!-- <script src="asset/js/script.js"></script> -->
+<script src="asset/js/main.js"></script>
+<script src="asset/js/image-zoom.js"></script>
+
+</html>

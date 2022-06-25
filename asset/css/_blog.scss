@@ -1,0 +1,66 @@
+.page-content {
+    .entry {
+        .entry-meta{
+           font-size: 14px; color: #777777;
+        }
+        .entry-title{
+            a{
+                font-size: 24px; color: #333333
+            }
+        }
+        .entry-cats{
+            font-size: 14px; color: #777777;
+            a{
+                font-size: 14px; color: #777777;
+            }
+        }
+        .entry-content{
+            font-size: 14px; color: #777777;
+            a{
+                font-size: 15px; color: #c96;
+            }
+        }
+        margin-right: -60px;
+        .entry-media {
+            position: relative;
+            background-color: #ccc;
+            margin-bottom: 2.4rem;
+        }
+    }
+    .sidebar {
+        .widget-title {
+            color: #333;
+            line-height: 1.1;
+            letter-spacing: -.01em;
+            margin-bottom: 2rem;
+            font-size: 14px;
+            color: #777777;
+            background-color: #fafafa;
+            .posts-list{
+                
+            }
+        }
+    }
+    .tagcloud {
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+        padding-top: 0.3rem;
+        margin-right: -1rem;
+        margin-bottom: -1rem;
+        a {
+            display: block;
+            color: #777;
+            font-weight: 100;
+            font-size: 15px;
+            line-height: 1.4;
+            border-radius: 0.3rem;
+            padding: 0.65rem 0.9rem;
+            background-color: #fafafa;
+            border: 0.1rem solid #ebebeb;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s ease;
+        }
+    }
+}

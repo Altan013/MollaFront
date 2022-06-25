@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Molla-Shop</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+            rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+            integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"/>
+        <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"/>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"
+            rel="stylesheet"/>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+            integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"/>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.css">
+        <link rel="stylesheet" href="asset/css/bootstrap.css">
+        <link rel="stylesheet" href="asset/css/style.css">
+    </head>
+    <body>
+        <section style="overflow-x: hidden;" id="header">
+            <div class="container">
+                <div class="row top-header">
+                    <ul>
+                        <li>
+                            <a style="color: #c96;" href="">
+                                <i class="fa-solid fa-phone"></i>Call: +51 636 16 44</a>
+                        </li>
+                        <li>
+                            <a style="color: #c96;" href="">
+                                <i class="fa-solid fa-heart"></i>Wishlist
+                                <span class="w-count">( 0 )</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a style="color: #c96;" href="">Altan</a>
+                        </li>
+                        <li>
+                            <a style="color: #c96;" href="">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row main-header">
+                    <div class="left-m-header col-lg-1">
+                        <img src="../00/asset/images/logo-gold-white.png" alt="">
+                    </div>
+                    <div class="center-m-header col-lg-7">
+                        <ul>
+                            <li>
+                                <a style="color: #c96;" href="">Home</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Man</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Woman</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Contact Us</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">Blog</a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-m-header col-lg-4">
+                        <ul>
+                            <li>
+                                <a style="color: #c96;" href="">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a style="color: #c96;" href="">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span class="cart-count">0</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div
+            class="page-header text-center"
+            style="background-image: url('/00/asset/images/page-header-bg.jpg')">
+            <div class="container">
+                <h1 class="page-title">Shop<span>
+                        Man</span></h1>
+            </div>
+        </div>
+        <nav aria-label="breadcrumb" class="breadcrumb-nav breadcrumb-with-filter">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a style="color: #c96;" href="/">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a style="color: #c96;" href="/man">Man</a>
+                    </li>
+                </ol>
+            </div>
+        </nav>
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <div class="toolbox">
+                            <div class="toolbox-right">
+                                <div class="toolbox-sort">
+                                    <label style="font-size: 18px; color: #333333;" for="sortby">Sort by:</label>
+                                    <div  class="select-custom">
+                                        <select name="sortby" id="sortby" class="form-control">
+                                            <option style="font-size: 12px; color: #333333;" class="sortOption" value="1">Newest</option>
+                                            <option style="font-size: 12px; color: #333333;" class="sortOption" value="2">Price : Low - High</option>
+                                            <option style="font-size: 12px; color: #333333;" class="sortOption" value="3">Price : High - Low</option>
+                                            <option style="font-size: 12px; color: #333333;" class="sortOption" value="4">Name : A - Z</option>
+                                            <option style="font-size: 12px; color: #333333;" class="sortOption" value="5">Name : Z - A</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="toolbox-layout">
+                                    <a href="#" id="2col" class="btn-layout">
+                                        <svg width="10" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                        </svg>
+                                    </a>
+                                    <a href="#" id="3col" class="btn-layout active">
+                                        <svg width="16" height="10">
+                                            <rect x="0" y="0" width="4" height="4"></rect>
+                                            <rect x="6" y="0" width="4" height="4"></rect>
+                                            <rect x="12" y="0" width="4" height="4"></rect>
+                                            <rect x="0" y="6" width="4" height="4"></rect>
+                                            <rect x="6" y="6" width="4" height="4"></rect>
+                                            <rect x="12" y="6" width="4" height="4"></rect>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products mb-3">
+                            <div class="row rowprods">
+
+                                <div class="col-6 col-md-4 col-lg-4 productClass">
+                                    <div class="product product-7 text-center">
+                                        <figure class="product-media">
+                                            <a class="until" href="/Woman/details/1155">
+                                                <img
+                                                    style="height:353px ;object-fit:cover"
+                                                    src="/00/asset/images/prod/men/16986060_33828007_1000.jpg"
+                                                    alt="Product image"
+                                                    class="product-image product-main">
+                                            </a>
+
+                                            <div class="product-action-vertical">
+                                                <a
+                                                    class="btn-product-icon btn-wishlist btn-expandable"
+                                                    href="/wishlist/SetWishlist/103">
+                                                    <span>add to wishlist</span></a>
+                                                <a
+                                                    class="btn-product-icon btn-quickview "
+                                                    title="Quick view"
+                                                    data-target="#productModal"
+                                                    data-toggle="modal"
+                                                    href="/Woman/details/1155">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <input hidden="" value="Woman">
+                                                <input hidden="" value="1155">
+
+                                            </div>
+
+                                        </figure>
+
+                                        <div class="product-body">
+
+                                            <h3 class="product-title">
+                                                <a href="/Woman/details/1155">RIBBED SHORT SLEEVE T-SHIRT</a>
+                                            </h3>
+                                            <div class="product-price">
+
+                                                <span style="color: #c96">19 $</span>
+                                            </div>
+
+                                            <div class="ratings-container">
+                                                <div class="rating">
+
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                                <span class="ratings-text">( 0 Reviews )</span>
+                                            </div>
+
+                                            <div class="product-nav product-nav-thumbs">
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="active product-notMain"
+                                                    href="/Woman/details/1155">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/16986060_33828007_1000.jpg"
+                                                        alt="product desc">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4 productClass">
+                                    <div class="product product-7 text-center">
+                                        <figure class="product-media">
+                                            <a class="until" href="/Woman/details/1113">
+                                                <img
+                                                    style="height:353px ;object-fit:cover"
+                                                    src="/00/asset/images/prod/men/16986060_33828007_1000.jpg"
+                                                    alt="Product image"
+                                                    class="product-image product-main">
+                                            </a>
+                                            <div class="product-action-vertical">
+                                                <a
+                                                    class="btn-product-icon btn-wishlist btn-expandable"
+                                                    href="/wishlist/SetWishlist/61">
+                                                    <span>add to wishlist</span></a>
+                                                <a
+                                                    class="btn-product-icon btn-quickview "
+                                                    title="Quick view"
+                                                    data-target="#productModal"
+                                                    data-toggle="modal"
+                                                    href="/Woman/details/1113">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <input hidden="" value="Woman">
+                                                <input hidden="" value="1113">
+                                            </div>
+                                        </figure>
+                                        <div class="product-body">
+
+                                            <h3 class="product-title">
+                                                <a href="/Woman/details/1113">T-SHIRT WITH SHORT SLEEVES AND SLOGAN</a>
+                                            </h3>
+                                            <div class="product-price">
+
+                                                <span style="color: #c96">15 $</span>
+                                            </div>
+
+                                            <div class="ratings-container">
+                                                <div class="rating">
+
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                                <span class="ratings-text">( 0 Reviews )</span>
+                                            </div>
+
+                                            <div class="product-nav product-nav-thumbs">
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="active product-notMain"
+                                                    href="/Woman/details/1113">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/16986060_33828007_1000.jpg"
+                                                        alt="product desc">
+                                                </a>
+
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="product-notMain"
+                                                    href="/Woman/details/1111">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/16986060_33828007_1000.jpg"
+                                                        alt="product desc">
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4 productClass">
+                                    <div class="product product-7 text-center">
+                                        <figure class="product-media">
+                                            <a class="until" href="/Woman/details/1111">
+                                                <img
+                                                    style="height:353px ;object-fit:cover"
+                                                    src="/00/asset/images/prod/men/17918189_39845861_600.jpg"
+                                                    alt="Product image"
+                                                    class="product-image product-main">
+                                            </a>
+
+                                            <div class="product-action-vertical">
+                                                <a
+                                                    class="btn-product-icon btn-wishlist btn-expandable"
+                                                    href="/wishlist/SetWishlist/60">
+                                                    <span>add to wishlist</span></a>
+                                                <a
+                                                    class="btn-product-icon btn-quickview "
+                                                    title="Quick view"
+                                                    data-target="#productModal"
+                                                    data-toggle="modal"
+                                                    href="/Woman/details/1111">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <input hidden="" value="Woman">
+                                                <input hidden="" value="1111">
+
+                                            </div>
+
+                                        </figure>
+
+                                        <div class="product-body">
+
+                                            <h3 class="product-title">
+                                                <a href="/Woman/details/1111">T-SHIRT WITH SHORT SLEEVES AND SLOGAN</a>
+                                            </h3>
+                                            <div class="product-price">
+
+                                                <span style="color: #c96">15 $</span>
+                                            </div>
+
+                                            <div class="ratings-container">
+                                                <div class="rating">
+
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                                <span class="ratings-text">( 0 Reviews )</span>
+                                            </div>
+
+                                            <div class="product-nav product-nav-thumbs">
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="active product-notMain"
+                                                    href="/Woman/details/1111">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17918189_39845861_600.jpg"
+                                                        alt="product desc">
+                                                </a>
+
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="product-notMain"
+                                                    href="/Woman/details/1113">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17918189_39845861_600.jpg"
+                                                        alt="product desc">
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4 productClass">
+                                    <div class="product product-7 text-center">
+                                        <figure class="product-media">
+                                            <a class="until" href="/Woman/details/1109">
+                                                <img
+                                                    style="height:353px ;object-fit:cover"
+                                                    src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                    alt="Product image"
+                                                    class="product-image product-main">
+                                            </a>
+
+                                            <div class="product-action-vertical">
+                                                <a
+                                                    class="btn-product-icon btn-wishlist btn-expandable"
+                                                    href="/wishlist/SetWishlist/59">
+                                                    <span>add to wishlist</span></a>
+                                                <a
+                                                    class="btn-product-icon btn-quickview "
+                                                    title="Quick view"
+                                                    data-target="#productModal"
+                                                    data-toggle="modal"
+                                                    href="/Woman/details/1109">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <input hidden="" value="Woman">
+                                                <input hidden="" value="1109">
+
+                                            </div>
+
+                                        </figure>
+
+                                        <div class="product-body">
+
+                                            <h3 class="product-title">
+                                                <a href="/Woman/details/1109">MULTICOLOURED GRAPHIC T-SHIRT</a>
+                                            </h3>
+                                            <div class="product-price">
+
+                                                <span style="color: #c96">19 $</span>
+                                            </div>
+
+                                            <div class="ratings-container">
+                                                <div class="rating">
+
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                                <span class="ratings-text">( 0 Reviews )</span>
+                                            </div>
+
+                                            <div class="product-nav product-nav-thumbs">
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="active product-notMain"
+                                                    href="/Woman/details/1109">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                        alt="product desc">
+                                                </a>
+
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="product-notMain"
+                                                    href="/Woman/details/1107">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                        alt="product desc">
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4 productClass">
+                                    <div class="product product-7 text-center">
+                                        <figure class="product-media">
+                                            <a class="until" href="/Woman/details/1107">
+                                                <img
+                                                    style="height:353px ;object-fit:cover"
+                                                    src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                    alt="Product image"
+                                                    class="product-image product-main">
+                                            </a>
+
+                                            <div class="product-action-vertical">
+                                                <a
+                                                    class="btn-product-icon btn-wishlist btn-expandable"
+                                                    href="/wishlist/SetWishlist/58">
+                                                    <span>add to wishlist</span></a>
+                                                <a
+                                                    class="btn-product-icon btn-quickview "
+                                                    title="Quick view"
+                                                    data-target="#productModal"
+                                                    data-toggle="modal"
+                                                    href="/Woman/details/1107">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <input hidden="" value="Woman">
+                                                <input hidden="" value="1107">
+
+                                            </div>
+
+                                        </figure>
+
+                                        <div class="product-body">
+
+                                            <h3 class="product-title">
+                                                <a href="/Woman/details/1107">MULTICOLOURED GRAPHIC T-SHIRT</a>
+                                            </h3>
+                                            <div class="product-price">
+
+                                                <span style="color: #c96">19 $</span>
+                                            </div>
+
+                                            <div class="ratings-container">
+                                                <div class="rating">
+
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                                <span class="ratings-text">( 0 Reviews )</span>
+                                            </div>
+
+                                            <div class="product-nav product-nav-thumbs">
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="active product-notMain"
+                                                    href="/Woman/details/1107">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                        alt="product desc">
+                                                </a>
+
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="product-notMain"
+                                                    href="/Woman/details/1109">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                        alt="product desc">
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-4 productClass">
+                                    <div class="product product-7 text-center">
+                                        <figure class="product-media">
+                                            <a class="until" href="/Woman/details/1059">
+                                                <img
+                                                    style="height:353px ;object-fit:cover"
+                                                    src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                    alt="Product image"
+                                                    class="product-image product-main">
+                                            </a>
+
+                                            <div class="product-action-vertical">
+                                                <a
+                                                    class="btn-product-icon btn-wishlist btn-expandable"
+                                                    href="/wishlist/SetWishlist/18">
+                                                    <span>add to wishlist</span></a>
+                                                <a
+                                                    class="btn-product-icon btn-quickview "
+                                                    title="Quick view"
+                                                    data-target="#productModal"
+                                                    data-toggle="modal"
+                                                    href="/Woman/details/1059">
+                                                    <span>Quick view</span>
+                                                </a>
+                                                <input hidden="" value="Woman">
+                                                <input hidden="" value="1059">
+
+                                            </div>
+
+                                        </figure>
+
+                                        <div class="product-body">
+
+                                            <h3 class="product-title">
+                                                <a href="/Woman/details/1059">Tupac "All eyez on me" T-shirt</a>
+                                            </h3>
+                                            <div class="product-price">
+
+                                                <span style="color: #c96">129.9 $</span>
+                                            </div>
+
+                                            <div class="ratings-container">
+                                                <div class="rating">
+
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+
+                                                </div>
+                                                <span class="ratings-text">( 0 Reviews )</span>
+                                            </div>
+
+                                            <div class="product-nav product-nav-thumbs">
+                                                <a
+                                                    style="height:52px;width:40px"
+                                                    class="active product-notMain"
+                                                    href="/Woman/details/1059">
+                                                    <img
+                                                        class="nmSrc"
+                                                        style="height:52px;width:40px"
+                                                        src="/00/asset/images/prod/men/17941317_37998060_1000.jpg"
+                                                        alt="product desc">
+                                                </a>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <input hidden="" value="16" class="hiddenCategoryId">
+
+                        <nav aria-label="Page navigation">
+                            <ul class="pagination justify-content-center">
+
+                                <li class="page-item active ">
+                                    <input hidden="" value="1" class="hiddenSortPage  activeInput">
+
+                                    <a class="page-link" href="/woman/sorting?page=1">1</a>
+
+                                </li>
+                                <li class="page-item   ">
+                                    <input hidden="" value="2" class="hiddenSortPage   ">
+
+                                    <a class="page-link" href="/woman/sorting?page=2">2</a>
+
+                                </li>
+
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <aside class="col-lg-3 order-lg-first">
+                        <div class="sidebar sidebar-shop">
+                            <div class="widget widget-clean">
+                                <label>Filters:</label>
+                                <a href="#" class="clear-filters">Clean All</a>
+                            </div>
+                            <div class="widget widget-collapsible">
+                                <h3 class="widget-title">
+                                    <a
+                                        data-toggle="collapse"
+                                        href="#widget-1"
+                                        role="button"
+                                        aria-expanded="true"
+                                        aria-controls="widget-1"
+                                        class="">
+                                        Category
+                                    </a>
+                                </h3>
+
+                                <div class="collapse show" id="widget-1">
+                                    <div class="widget-body">
+                                        <div class="filter-items filter-items-count">
+                                            <div class="filter-item category-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        value="30"
+                                                        type="checkbox"
+                                                        class="custom-control-input categoryCheck"
+                                                        id="30">
+                                                    <label class="custom-control-label">Basics</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item category-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        value="31"
+                                                        type="checkbox"
+                                                        class="custom-control-input categoryCheck"
+                                                        id="31">
+                                                    <label class="custom-control-label">Long sleeve</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item category-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        value="32"
+                                                        type="checkbox"
+                                                        class="custom-control-input categoryCheck"
+                                                        id="32">
+                                                    <label class="custom-control-label">Oversized</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item category-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        value="33"
+                                                        type="checkbox"
+                                                        class="custom-control-input categoryCheck"
+                                                        id="33">
+                                                    <label class="custom-control-label">Cropped</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item category-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        value="34"
+                                                        type="checkbox"
+                                                        class="custom-control-input categoryCheck"
+                                                        id="34">
+                                                    <label class="custom-control-label">Prints</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget widget-collapsible">
+                                <h3 class="widget-title">
+                                    <a
+                                        data-toggle="collapse"
+                                        href="#widget-3"
+                                        role="button"
+                                        aria-expanded="true"
+                                        aria-controls="widget-3">
+                                        Colour
+                                    </a>
+                                </h3>
+                                <div class="collapse show" id="widget-3">
+                                    <div class="widget-body">
+                                        <div class="filter-colors">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="width: 30px; height: 30px; border-radius: 50%; display: inline-block; background: Black;">
+                                                <span class="sr-only">Black</span></a>
+                                            <input value="1" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: rgba(255, 255, 255, 0.715); width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">White</span></a>
+                                            <input value="2" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Red; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Red</span></a>
+                                            <input value="3" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Blue; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Blue</span></a>
+                                            <input value="4" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Green; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Green</span></a>
+                                            <input value="5" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Yellow; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Yellow</span></a>
+                                            <input value="6" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Purple; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Purple</span></a>
+                                            <input value="7" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Brown; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Brown</span></a>
+                                            <input value="8" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Chocolate; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Chocolate</span></a>
+                                            <input value="9" hidden="">
+                                            <a
+                                                class="colorClick"
+                                                href="#"
+                                                style="background: Beige; width: 30px; height: 30px; border-radius: 50%; display: inline-block;">
+                                                <span class="sr-only">Beige</span></a>
+                                            <input value="10" hidden="">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget widget-collapsible">
+                                <h3 class="widget-title">
+                                    <a
+                                        data-toggle="collapse"
+                                        href="#widget-4"
+                                        role="button"
+                                        aria-expanded="true"
+                                        aria-controls="widget-4">
+                                        Brand
+                                    </a>
+                                </h3>
+                                <div class="collapse show" id="widget-4">
+                                    <div class="widget-body">
+                                        <div class="filter-items">
+
+                                            <div class="filter-item brand-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="custom-control-input filtercheck"
+                                                        value="1"
+                                                        id="1">
+                                                    <label class="custom-control-label">Bershka</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item brand-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="custom-control-input filtercheck"
+                                                        value="2"
+                                                        id="2">
+                                                    <label class="custom-control-label">Pull &amp; Bear</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item brand-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="custom-control-input filtercheck"
+                                                        value="3"
+                                                        id="3">
+                                                    <label class="custom-control-label">Zara</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item brand-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="custom-control-input filtercheck"
+                                                        value="4"
+                                                        id="4">
+                                                    <label class="custom-control-label">Nike</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item brand-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="custom-control-input filtercheck"
+                                                        value="6"
+                                                        id="6">
+                                                    <label class="custom-control-label">Adidas</label>
+                                                </div>
+                                            </div>
+                                            <div class="filter-item brand-item">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input
+                                                        type="checkbox"
+                                                        class="custom-control-input filtercheck"
+                                                        value="7"
+                                                        id="7">
+                                                    <label class="custom-control-label">Balenciaga</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="widget-body">
+                                <div class="filter-price-text">
+                                    Price Range:
+                                </div>
+                                <div style="color: #c96;" class="range-slider filter-price  mt-3">
+                                    <span class="rangeValues">1-1000$</span>
+                                    <input id="range filter-price-range" value="1" min="0" max="1000" step="10" type="range">
+                                    <input id="range filter-price-range" value="1000" min="0" max="1000" step="10" type="range">
+                                  </div>
+                            </div>
+                        </div>
+
+                        <div
+                            style="cursor:pointer; text-align: center; background-color: #c94; color: white; padding-top: 5px; padding-bottom: 5px;"
+                            class="widget widget-collapsible lastFilter">
+
+                            <a
+                                style="color: white; padding-left: 122px; padding-right: 122px; padding-top: 8px; padding-bottom: 8px;"
+                                href="#"
+                                class="filterLink">Filter</a>
+
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-middle">
+                <div class="container">
+                    <div class="row">
+                        <div class="about">
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="widget widget-about">
+                                    <h4 class="widget-title">about molla</h4>
+                                    <p>Praesent dapibus, neque id cursus ucibus, tortor neque egestas augue, eu
+                                        vulputate magna eros eu erat.
+                                    </p>
+
+                                    <div class="social-icons">
+                                        <a href="#" class="social-icon" title="Facebook" target="_blank">
+                                            <i class="icon-facebook-f"></i>
+                                        </a>
+                                        <a href="#" class="social-icon" title="Twitter" target="_blank">
+                                            <i class="icon-twitter"></i>
+                                        </a>
+                                        <a href="#" class="social-icon" title="Instagram" target="_blank">
+                                            <i class="icon-instagram"></i>
+                                        </a>
+                                        <a href="#" class="social-icon" title="Youtube" target="_blank">
+                                            <i class="icon-youtube"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="widget">
+                                    <h4 class="widget-title">Useful Links</h4>
+                                    <ul class="widget-list">
+                                        <li>
+                                            <a href="about.html">About Molla</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How to shop on Molla</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">FAQ</a>
+                                        </li>
+                                        <li>
+                                            <a href="contact.html">Contact us</a>
+                                        </li>
+                                        <li>
+                                            <a href="login.html">Log in</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="widget">
+                                    <h4 class="widget-title">Customer Service</h4>
+                                    <ul class="widget-list">
+                                        <li>
+                                            <a href="#">Payment Methods</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Money-back guarantee!</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Returns</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Shipping</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Terms and conditions</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-lg-3">
+                                <div class="widget">
+                                    <h4 class="widget-title">My Account</h4>
+
+                                    <ul class="widget-list">
+                                        <li>
+                                            <a href="#">Sign In</a>
+                                        </li>
+                                        <li>
+                                            <a href="cart.html">View Cart</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">My Wishlist</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Track My Order</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container text-center">
+                    <figure class="footer-payments">
+                        <img
+                            src="/00/asset/images/payments.png"
+                            alt="Payment methods"
+                            width="272"
+                            height="20">
+                    </figure>
+                    <img
+                        src="/00/asset/images/logo-gold-white.png"
+                        alt="Molla Logo"
+                        width="82"
+                        height="25">
+                    <p style="color: #c96;" class="footer-copyright">Copyright © 2022 Molla Store. All Rights Reserved, Developed Altan Ibrahimli.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script
+        type="text/javascript"
+        src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.js"></script>
+    <script src="asset/js/script.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script src="asset/js/range.js"></script>
+</html>  

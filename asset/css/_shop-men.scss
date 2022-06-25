@@ -1,0 +1,167 @@
+.page-header {
+    width: 100%;
+    height: 157px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .page-title {
+        padding: 50px;
+        color: #c96;
+    }
+}
+.breadcrumb-nav {
+    margin-bottom: 4rem;
+    border-bottom: 0.1rem solid rgba(235,235,235,0.55);
+
+    .breadcrumb {
+        .breadcrumb-item {
+            margin-top: 20px;
+            &:not(:first-child)::before {
+                color: #999999;
+                content: ">";
+                padding-right: 0.7rem;
+                font-size: 1.1rem;
+                vertical-align: middle;
+                margin-top: -0.1rem;
+            }
+        }
+    }
+}
+.categories-page {
+    .banner {
+        overflow: hidden;
+        display: block;
+        position: relative;
+        margin-bottom: 2rem;
+        background-color: #ccc;
+        a {
+            position: relative;
+            display: block;
+            outline: none !important;
+            color: #c96;
+
+        }
+        img {
+            width: 100%;
+            height: 500px;
+        }
+        .banner-link {
+            border: 1px solid;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            z-index: 5;
+            background-color: rgba(255, 255, 255, 0.927);
+        }
+    }
+}
+.categories-page {
+    .banner {
+        overflow: hidden;
+        > a {
+            &:not(.banner-link) {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    transition: all 0.35s ease;
+                    background-color: rgba(25,25,25,0.3);
+                    z-index: 1;
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+        }
+        &:hover {
+            > a {
+                &:not(.banner-link) {
+                    &:after {
+                        visibility: visible;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+    .banner-badge {
+        .banner-link {
+            padding-top: 1.45rem;
+            padding-bottom: 1.45rem;
+            background-color: rgba(255,255,255,0.9);
+            z-index: 5;
+            bottom: 2rem;
+            cursor: pointer;
+        }
+        .banner-title {
+            font-size: 18px;
+            color: #c96;
+            margin-bottom: 0.5rem;
+            text-align: center;
+
+        }
+        .banner-subtitle {
+            font-size: 14px;
+            color: #c96;
+        }
+    }
+}
+.banner-badge {
+    .banner-link-text {
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        color: #fff;
+        transition: all 0.3s ease;
+        transform: translateY(100%);
+        -webkit-transform: translateY(100%);
+    }
+    .banner-link {
+        &:hover {
+            text-decoration: none;
+            .banner-title {
+                opacity: 0;
+                transform: translateY(100%);
+                -webkit-transform: translateY(100%);
+            }
+            .banner-subtitle {
+                opacity: 0;
+                transform: translateY(100%);
+                -webkit-transform: translateY(100%);
+            }
+            .banner-link-text {
+                opacity: 1;
+                background-color: #c96;
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+            }
+        }
+        &:focus {
+            text-decoration: none;
+            .banner-title {
+                opacity: 0;
+                transform: translateY(100%);
+                -webkit-transform: translateY(100%);
+            }
+            .banner-subtitle {
+                opacity: 0;
+                transform: translateY(100%);
+                -webkit-transform: translateY(100%);
+            }
+            .banner-link-text {
+                opacity: 1;
+                background-color: #c96;
+                transform: translateY(0);
+                -webkit-transform: translateY(0);
+            }
+        }
+    }
+}
